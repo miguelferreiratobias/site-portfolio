@@ -1,0 +1,134 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body{
+    background: #fdcc04;
+    color: #202020;
+}
+
+nav {
+    height: 70px;
+    background: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 2rem;
+}
+
+.sobre-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 19vh;
+    margin-top: 30px;
+    margin-left: 4vw;
+}
+
+.sobre-container h1{
+    font-size: 3.5rem;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.coluna-esquerda{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.coluna-esquerda p{
+    padding-top: 1.8vw;
+    padding-left: .8vw;
+    font-size: 2rem;
+    text-align: justify;
+}
+
+.logo{
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-style: italic;
+    padding: 0 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+    color:#fff;
+    padding: 0.8rem 1rem;
+}
+
+nav a:hover {
+    color: #fdcc04;
+  }
+
+.hero{
+    background: #fdcc04;
+}
+
+.nav-items{
+    padding: 0.4rem 0.4rem;
+    border-radius: 20px;
+    background: #fdcc04;
+  
+}
+
+.coluna-direita {
+    display:block;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+       
+ }
+
+.sobre-imagem {
+    width: 120%;
+    height: 120%;
+    
+}
+
+@media screen and (max-width: 720px){
+    .sobre-container{
+        grid-template-columns: 1fr;
+    }
+
+    nav {
+        height: 100px;
+        background: #000;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        padding: 0 10vh 0 10vh;
+        
+
+    }
+
+    .logo{
+        color: #fff;
+        font-size: 1.5rem;
+        font-weight: bold;
+        font-style: italic;
+        padding-left: 10vw;
+        padding-right: 10vw;
+        justify-items: center;
+    }
+
+    .nav-items{
+        border-radius: 20px;
+        background: #fdcc04;
+        padding: 0.2rem 0.4rem;
+            
+    }
+    nav a {     
+        padding: 0.4rem 0.3rem;
+    }
+
+    .sobre-imagem {
+        width: 50%;
+        height: 50%;
+        
+     }
+}
